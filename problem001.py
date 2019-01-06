@@ -2,6 +2,6 @@
 
 j, n = 0, 1000
 for i in range (3, n):
-    j = j + i * ((i%3 * i%5) == 0)
+    j += i * ((i%3 * i%5) == 0)
 
 print(j)
