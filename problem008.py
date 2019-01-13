@@ -9,13 +9,13 @@ obnoxious = ''
 maxprod = 0
 
 egad = pd.read_csv('obnoxious.csv', header = None)
-for i in range(0, egad.size):
+for i in range(egad.size):
     obnoxious += egad.iloc[i, 0]
-l = list(filter((lambda x: len(x)), obnoxious.split('0')))
+l = list(filter(lambda x: len(x), obnoxious.split('0')))
 for chunk in l:
-    for i in range(0,len(chunk)-(n-1)):
-        f = map((lambda x: int(x)), chunk[i:i+n])
-        prod = reduce((lambda x, y: x*y), f)
+    for i in range(len(chunk)-(n-1)):
+        f = map(lambda x: int(x), chunk[i:i+n])
+        prod = reduce(lambda x, y: x*y, f)
         if prod > maxprod:
             maxprod = prod
 
