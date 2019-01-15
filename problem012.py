@@ -1,4 +1,3 @@
-
 # First triangular with 'n' divisors
 
 from math import sqrt
