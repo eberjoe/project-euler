@@ -1,4 +1,4 @@
-# Laticce paths for an 'n'x'n' grid
+# Lattice paths for an 'n'x'n' grid
 
 n = 20
 
