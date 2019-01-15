@@ -10,7 +10,7 @@ maxprod = 0
 
 matrix = pd.read_csv('grid.csv', header = None)
 for i in range(0, matrix.size):
-    a.append(list(map((lambda x: int(x)), matrix.iloc[i, 0].split(' '))))
+    a.append(list(map(lambda x: int(x), matrix.iloc[i, 0].split(' '))))
 
 for i in range(0, 20):
     for j in range(0, 20-(n-1)):
