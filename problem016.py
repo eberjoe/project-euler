@@ -1,4 +1,4 @@
-# Sum of the digits of 2 raised to the nth power
+# Sum of the digits of the nth power of 2
 
 n = 1000
 
