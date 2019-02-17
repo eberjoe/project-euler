@@ -9,12 +9,12 @@ a = []
 maxprod = 0
 
 matrix = pd.read_csv('grid.csv', header = None)
-for i in range(0, matrix.size):
+for i in range(matrix.size):
     a.append(list(map(lambda x: int(x), matrix.iloc[i, 0].split(' '))))
 
 for i in range(0, 20):
     for j in range(0, 20-(n-1)):
-        hprod = reduce((lambda x, y: x*y), a[i][j:j+n])
+        hprod = reduce(lambda x, y: x*y, a[i][j:j+n])
         if i+n <= 20 : d1prod, d2prod = 1, 1
         vprod = 1
         for k in range (0, n):
